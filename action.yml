@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'tutorial'
+author: 'John Wu'
+inputs:
+  myInput:
+    description: 'greetings to use'
+    required: true
+    default: 'John Wu'
+outputs:
+  myOutput:
+    description: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
